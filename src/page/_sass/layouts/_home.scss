@@ -6,9 +6,11 @@
   color: #fff;
   &__wrap{
     padding: 7% 10%;
+    @media screen and (max-width: 768px){
+      padding: 7% 2%;
+    }
   }
   &__title{
-    font-size: 4em;
     padding: 20px 0px;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;

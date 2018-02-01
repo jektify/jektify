@@ -34,17 +34,18 @@ plugins:
 # Jekyll Spotify - Configuration for _config.yml
 # Insert this code in your template
 #
-spotify:
+jektify:
   enable: true
   open: false
   toggle:
-    using: true
+    enable: true
   user:
     name: williamcanin
     text: See me no Spotify
   sass:
     jekyll: true
-    dir: "_sass/vendor"
+    other:
+      dir: "_sass"
   title:
     enable: true
     text: "Jekyll Spotify Plugin"

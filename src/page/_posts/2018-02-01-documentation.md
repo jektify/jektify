@@ -34,7 +34,7 @@ You need to install, so let's mission:
 # Dependencies
 
 
-<a class="markdown__link no-decoration"href="https://beta.gemnasium.com/projects/github.com/jektify/jektify"><img src="https://beta.gemnasium.com/badges/github.com/jektify/jektify.svg" alt="Dependency Status" /></a>
+<a class="markdown__link no-decoration" href="https://gemnasium.com/github.com/jektify/jektify" target="_blank"><img src="https://gemnasium.com/badges/github.com/jektify/jektify.svg" alt="Dependency Status" /></a>
 
 
 {: .markdown__paragraph}
@@ -94,7 +94,7 @@ The following lines should be inserted:
 plugins:
   - jektify
 
-spotify:
+jektify:
   enable: true
   open: true
   toggle:
@@ -252,7 +252,7 @@ The **Jektify** will use this URI, the only difference being that instead of bei
 The **Jektify** it works with the following tags:
 
 {% highlight ruby linenos %}
-{ % spotify [user]/[type]/[id]/[theme] % }
+{ % jektify [user]/[type]/[id]/[theme] % }
 {% endhighlight %}
 
 {: .markdown__blockquote .markdown__paragraph}
@@ -289,13 +289,13 @@ By default it is `spotify`. Will only change if you use `playlist` in the second
 **Example:**
 
 {% highlight ruby linenos %}
-{ % spotify spotify/track/62qsgMnY4wg8nE5qjyOdWO/dark % }
+{ % jektify spotify/track/62qsgMnY4wg8nE5qjyOdWO/dark % }
 
-{ % spotify williamcanin/playlist/48brJJZdVifY79QAFmEImq/light % }
+{ % jektify williamcanin/playlist/48brJJZdVifY79QAFmEImq/light % }
 
-{ % spotify spotify/artist/711MCceyCBcFnzjGY4Q7Un/dark % }
+{ % jektify spotify/artist/711MCceyCBcFnzjGY4Q7Un/dark % }
 
-{ % spotify spotify/album/6OwvO40ahugJE5PH4TjqTg/light % }
+{ % jektify spotify/album/6OwvO40ahugJE5PH4TjqTg/light % }
 {% endhighlight %}
 
 {: .markdown__blockquote .markdown__paragraph}
@@ -377,28 +377,28 @@ Here is examples of how the "Jektify" will behave in your page:
 {: .markdown__h2}
 ## Track
 
-{% spotify spotify/track/0C80GCp0mMuBzLf3EAXqxv/white %}
+{% jektify spotify/track/0C80GCp0mMuBzLf3EAXqxv/white %}
 
 {: .markdown__h2}
 ## Playlist
 
-{% spotify williamcanin/playlist/48brJJZdVifY79QAFmEImq/dark %}
+{% jektify williamcanin/playlist/48brJJZdVifY79QAFmEImq/dark %}
 
 {: .markdown__h2}
 ## Artist
 
-{% spotify spotify/artist/711MCceyCBcFnzjGY4Q7Un/light %}
+{% jektify spotify/artist/711MCceyCBcFnzjGY4Q7Un/light %}
 
 {: .markdown__h2}
 ## Album
 
-{% spotify spotify/album/6OwvO40ahugJE5PH4TjqTg/dark %}
+{% jektify spotify/album/6OwvO40ahugJE5PH4TjqTg/dark %}
 
 {: .markdown__h1}
 # Report questions
 
 {: .markdown__paragraph}
-You can take doubt here: [GitHub Issues](https://github.com/williamcanin/jektify/issues){:target="_blank"}{: .markdown__link}
+You can take doubt here: [GitHub Issues](https://github.com/jektify/jektify/issues){:target="_blank"}{: .markdown__link}
 
 {: .markdown__h1}
 # License
@@ -412,7 +412,7 @@ The gem is available as open source under the terms of the [MIT]{:target="_blank
 {: .markdown__paragraph}
 Copyright (c) {{ site.time | date: '%Y' }} William Canin
 
-[Jektify]: https://github.com/williamcanin/jektify
+[Jektify]: https://github.com/jektify/jektify
 
 [Spotify]: https://www.spotify.com
 
