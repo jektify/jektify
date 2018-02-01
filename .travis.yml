@@ -1,0 +1,17 @@
+sudo: required
+dist: precise
+language: ruby
+rvm:
+  - 2.4.2
+before_install:
+  - gem install bundler
+install:
+  - bundle install
+script:
+  - bin/setup
+  - bin/travis
+branches:
+  only:
+    - master
+notifications:
+  email: false

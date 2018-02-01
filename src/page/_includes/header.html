@@ -1,0 +1,40 @@
+<section class="jumbtron header">
+  <div class="container-fluid">
+    <div class="wrapper">
+
+      <div class="row">
+        <div class="col-12">
+        <img width="200" height="200" class="img-fluid d-block mx-auto brand" src="{{ "/assets/images/brand/jektify_dark.svg" | prepend: site.baseurl | prepend: site.url }}" alt="">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-6 offset-3">
+            <h1 class="text-center title">{{site.title}}</h1>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-6 offset-3">
+          <p class="text-center description">{{site.description}}</p>
+        </div>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-6 offset-3 link">
+          <a href="https://github.com/williamcanin/jektify" target="_blank" class="text-center link__go">View code on GitHub</a> |
+          <a href="https://rubygems.org/gems/jektify" target="_blank" class="text-center link__go">View in RubyGems</a>
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div class="col-6 offset-3 text-center download">
+          <a href="{{site.header.url_download}}/{{site.header.name}}-{{site.header.lasted_version}}.gem" class="btn btn-success download__btn">Download</a>
+          <p class="download__text">Lasted version &nbsp;{{site.header.lasted_version}}</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>

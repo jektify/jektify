@@ -1,0 +1,10 @@
+source "https://rubygems.org"
+
+gem "json"
+gem "bigdecimal"
+gem "rake"
+gem "jekyll"
+gem "bootstrap"
+group :jekyll_plugins do
+  gem "jekyll-spotify-plugin", "~> 3.0.0"
+end

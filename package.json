@@ -1,0 +1,40 @@
+{
+  "name": "jektify",
+  "version": "1.0.0",
+  "description": "Jekyll plugin to generate HTML code fragments to incorporate music from Spotify",
+  "main": "gulpfile.babel.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Hello!\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/williamcanin/jektify.git"
+  },
+  "keywords": [
+    "spotify",
+    "plugin",
+    "jekyll",
+    "jektify"
+  ],
+  "author": "William Canin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/williamcanin/jektify/issues"
+  },
+  "homepage": "https://github.com/williamcanin/jektify#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "gulp": "^3.9.0",
+    "gulp-babel": "^7.0.1",
+    "gulp-jshint": "^2.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^3.0.0",
+    "jshint": "^2.9.5"
+  }
+}
