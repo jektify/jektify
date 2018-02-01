@@ -28,7 +28,7 @@ exclude: ["_vendor","Gemfile","*.lock","gh-pages.sh","deploy.sh"]
 
 plugins:
   - bootstrap
-  - jekyll-spotify-plugin
+  - jektify
 
 # ----------------------------------------------------------------------
 # Jekyll Spotify - Configuration for _config.yml
