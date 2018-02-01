@@ -205,7 +205,7 @@ You can use CDN of the respective version:
 
 {% highlight html linenos %}
 ---
-<script src="https://cdn.rawgit.com/williamcanin/jektify/cdn/v[VERSION]/jektify.min.js"></script>
+<script src="https://cdn.rawgit.com/jektify/jektify/master/cdn/v[VERSION]/jektify.min.js"></script>
 </body>
 {% endhighlight %}
 
@@ -213,7 +213,7 @@ You can use CDN of the respective version:
 You can see the CDNs of the other [VERSION] in:
 
 {: .markdown__paragraph}
-[Jektify - CDN Versions](https://github.com/williamcanin/jektify/tree/master/cdn){:target="_blank"}{: .markdown__link}
+[Jektify - CDN Versions](https://github.com/jektify/jektify/tree/master/cdn){:target="_blank"}{: .markdown__link}
 
 {: .markdown__h1}
 # Using
