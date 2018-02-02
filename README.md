@@ -54,7 +54,7 @@ The [Jektify](https://github.com/jektify/jektify) code is stored in the folder "
 
 *JavaScript*
 
-[Jektify](https://github.com/jektify/jektify) uses javascript, where it is located in the folder "`src/js/jektify.js`". All Javascript code must be written to it, regardless of whether it uses ES6 or not. Gem will use it in the folder "`assets/js`", and you need to minify it with [Gulp](https://gulpjs.com/) to play it there. To do this, run on the terminal in the root directory of Jektify:
+[Jektify](https://github.com/jektify/jektify) uses javascript, where it is located in the folder "`src/dev/js/jektify.js`". All Javascript code must be written to it, regardless of whether it uses ES6 or not. Gem will use it in the folder "`assets/js`", and you need to minify it with [Gulp](https://gulpjs.com/) to play it there. To do this, run on the terminal in the root directory of Jektify:
 
 ```shell
 $ gulp
@@ -72,7 +72,7 @@ Now, you can generate the gem of Jektify with the `bundle exec rake build` comma
 
 *Webpage*
 
-The development of the [Jektify](https://github.com/jektify/jektify) page is in the folder "`src/page`", it is a Jekyll template. To develop, you need to update the [Jektify](https://github.com/jektify/jektify) version in the `Gemfile` file according to the version of the gem in development of [Jektify](https://github.com/jektify/jektify).
+The development of the [Jektify](https://github.com/jektify/jektify) page is in the folder "`src/dev/page`", it is a Jekyll template. To develop, you need to update the [Jektify](https://github.com/jektify/jektify) version in the `Gemfile` file according to the version of the gem in development of [Jektify](https://github.com/jektify/jektify).
 
 ```yaml
 group :jekyll_plugins do
