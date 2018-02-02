@@ -33,12 +33,14 @@ You need to install, so let's mission:
 {:.markdown__h1}
 # Dependencies
 
-
 <a class="markdown__link no-decoration" href="https://gemnasium.com/github.com/jektify/jektify" target="_blank"><img src="https://gemnasium.com/badges/github.com/jektify/jektify.svg" alt="Dependency Status" /></a>
 
 
 {: .markdown__paragraph}
-You can see the dependencies of Jektify through [Gemnasium](https://gemnasium.com/github.com/jektify/jektify){:target="_blank"}{: .markdown__link}. All dependencies are listed.
+You can see the dependencies of gem Jektify through [Gemnasium](https://gemnasium.com/github.com/jektify/jektify){:target="_blank"}{: .markdown__link}. All dependencies are listed.
+
+{: .markdown__paragraph}
+With [Jektify]{: .markdown__link} running, it uses dependency on [JQuery]{:target="_blank"}{: .markdown__link}.
 
 {:.markdown__h1}
 # Get Jektify
@@ -99,12 +101,13 @@ jektify:
   open: true
   toggle:
     using: true  
-  user:
-    name: williamcanin
+  spotify:
+    user: williamcanin
     text: See me no Spotify
   sass:
     jekyll: true
-    dir: "way/to/your/SASS/vendor"
+    other:
+      dir: "way/to/your/SASS"   
   title:
     enable: true
     text: "Jektify"
@@ -116,7 +119,7 @@ jektify:
 {% endhighlight %}
 
 {:.markdown__h3}
-### Commenting:
+### What does each option do?
 
 {: .markdown__paragraph}
 `[ Line 2 ]`{: .markdown__code} Report for Jekyll use **Jektify**.
@@ -140,14 +143,11 @@ Plugin will have operation error.
 {: .markdown__paragraph}
 `[ Line 11 ]`{: .markdown__code} - Option [ text ] Here is the custom text that the redirect button will have. Put a very attractive and short.
 
-{: .markdown__h3}
-### Do not use SASS Jekyll
-
 {: .markdown__paragraph}
 `[ Line 13 ]`{: .markdown__code} Option [ true / false ] This line is very important! In it you will define using the build SASS Jekyll or other compilation of SASS, as the Gulp. If you use the Jekyll, let `true`. If you do not use SASS of Jekyll leaves to `false`.
 
 {: .markdown__paragraph}
-`[ Line 14 ]`{: .markdown__code} Option [ path ] If the line `13` is` false`, you should inform the way the vendor folder of your SASS files. For example: If you store your SASS files in the `src/sass/vendor`, then that is the way you have to put in the variable `dir`.
+`[ Line 15 ]`{: .markdown__code} Option [ path ] If the line `13` is` false`, you should inform the way the vendor folder of your SASS files. For example: If you store your SASS files in the `src/sass/vendor`, then that is the way you have to put in the variable `dir`.
 
 {: .markdown__paragraph}
 After setting the path and build the project, a folder will be created to export the SASS of Jektify, in the path of the `dir` . With this, you must load the exported SASS in your manifest (`main.scss`). For example:
@@ -157,10 +157,10 @@ After setting the path and build the project, a folder will be created to export
 {% endhighlight %}
 
 {: .markdown__paragraph}
-`[ Line 16 and 19 ]`{: .markdown__code} - Option: [ true / false ]  If you want a title or description, leave to `true`. Otherwise, leave as `false`.
+`[ Line 17 and 20 ]`{: .markdown__code} - Option: [ true / false ]  If you want a title or description, leave to `true`. Otherwise, leave as `false`.
 
 {: .markdown__paragraph}
-`[ Line 17 and 20 ]`  If the line 16 (or line 19) is in the `true`, enter your title (or description) in variable `text`. So if you want a title and content inside the music box...use true.
+`[ Line 18 and 21 ]`  If the line 17 (or line 20) is in the `true`, enter your title (or description) in variable `text`. So if you want a title and content inside the music box...use true.
 
 {: .markdown__h1}
 # Importing JavaScript
@@ -320,7 +320,6 @@ The class structure `.jektify` this is:
 > NOTE: You should put CSS properties inside the subclass "--custom".
 
 {% highlight scss linenos %}
-
 .jektify{
   &--custom{ }
 
@@ -340,11 +339,19 @@ The class structure `.jektify` this is:
     &--custom{}
   }
 
-  &__body{
+  &__user{
     &--custom{}
+
+    &-link{
+      &--custom{}
+    }
+
+    &-text{
+      &--custom{}
+    }
   }
 
-  &__description{
+  &__body{
     &--custom{}
   }
 
@@ -352,7 +359,7 @@ The class structure `.jektify` this is:
     &--custom{}
   }
 
-  &__content{
+  &__description{
     &--custom{}
   }
 
@@ -365,6 +372,7 @@ The class structure `.jektify` this is:
   }
 
 }
+
 {% endhighlight %}
 
 
@@ -412,7 +420,7 @@ The gem is available as open source under the terms of the [MIT]{:target="_blank
 {: .markdown__paragraph}
 Copyright (c) {{ site.time | date: '%Y' }} William Canin
 
-[Jektify]: https://github.com/jektify/jektify
+[Jektify]: https://jektify.github.io
 
 [Spotify]: https://www.spotify.com
 
