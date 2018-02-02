@@ -24,7 +24,7 @@ markdown: kramdown
 permalink: /:title/
 
 # Excluded for build
-exclude: ["_vendor","Gemfile","*.lock","gh-pages.sh","deploy.sh"]
+exclude: ["_gems","Gemfile","*.lock","build","serve"]
 
 plugins:
   - bootstrap
