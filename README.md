@@ -1,8 +1,11 @@
 # Jektify
 
 [![Gem Version](https://badge.fury.io/rb/jektify.svg)](https://badge.fury.io/rb/jektify)
+
 [![Build Status](https://travis-ci.org/jektify/jektify.svg?branch=master)](https://travis-ci.org/jektify/jektify)
+
 [![Dependency Status](https://beta.gemnasium.com/badges/github.com/jektify/jektify.svg)](https://beta.gemnasium.com/projects/github.com/jektify/jektify)
+
 [![security](https://hakiri.io/github/jektify/jektify/master.svg)](https://hakiri.io/github/jektify/jektify/master)
 
 
