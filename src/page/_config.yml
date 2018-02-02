@@ -31,7 +31,7 @@ plugins:
   - jektify
 
 # ----------------------------------------------------------------------
-# Jekyll Spotify - Configuration for _config.yml
+# Jektify - Configuration for _config.yml
 # Insert this code in your template
 #
 jektify:
@@ -45,7 +45,7 @@ jektify:
   sass:
     jekyll: true
     other:
-      dir: "_sass"
+      dir: "src/sass"
   title:
     enable: true
     text: "Jekyll Spotify Plugin"

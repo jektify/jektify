@@ -1,4 +1,5 @@
 module Jektify
+
   # Description
   #
   # MAJOR: It includes API changes and can break backward compatibility
@@ -9,4 +10,5 @@ module Jektify
     MINOR = 0
     PATCH = 0
     VERSION = "#{MAJOR}.#{MINOR}.#{PATCH}"
+    
 end
