@@ -211,6 +211,9 @@ You can see the CDNs of the other [VERSION] in:
 {: .markdown__paragraph}
 [Jektify - CDN Versions](https://github.com/jektify/jektify/tree/master/cdn){:target="_blank"}{: .markdown__link}
 
+{: .markdown__paragraph}
+It is recommended to use the version "`static`", in case of an error, use the version according to Jektify.
+
 {: .markdown__h1}
 # Using
 

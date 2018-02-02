@@ -7,5 +7,5 @@ gem "rake"
 gem "jekyll"
 gem "bootstrap"
 group :jekyll_plugins do
-  gem "jektify", "~> 1.0.0"
+  gem "jektify", "~> 1.0.1"
 end

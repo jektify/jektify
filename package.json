@@ -1,6 +1,6 @@
 {
   "name": "jektify",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Jekyll plugin to generate HTML code fragments to incorporate music from Spotify",
   "main": "gulpfile.babel.js",
   "directories": {

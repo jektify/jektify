@@ -50,7 +50,14 @@ After checking out the repo, run `bin/setup` to install dependencies. Then, run 
 
 *Code*
 
-The [Jektify](https://github.com/jektify/jektify) code is stored in the folder "`lib`". Every time you change the version, it has to be changed in the file "`lib/jektify/version.rb`" respecting the version hierarchy.
+The [Jektify](https://github.com/jektify/jektify) code is stored in the folder "`lib`". Every time you change the version, it has to be changed in the file "`lib/jektify/version.rb`" respecting the version hierarchy. Files where the version should be changed:
+
+* lib/jektify/version.rb
+* bin/travis
+* src/dev/page/Gemfile
+* package.json
+* gulpfile.babel.js
+* cdn/v[VERSION]
 
 *JavaScript*
 
