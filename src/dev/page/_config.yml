@@ -19,9 +19,26 @@ header:
 # Build settings
 destination: ./_site
 markdown: kramdown
+highlighter: pygments
 
 # Permilink
 permalink: /:title/
+
+# Config Sass Jekyll
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# Config for Compress HTML
+compress_html:
+  clippings: []
+  comments: []
+  endings: []
+  ignore:
+    envs: []
+  blanklines: false
+  profile: false
+  startings: []
 
 # Excluded for build
 exclude: ["_gems","Gemfile","*.lock","build","serve"]
