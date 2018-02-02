@@ -41,12 +41,16 @@ See: [https://jektify.github.io](https://jektify.github.io)
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake test` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
 
+*Code*
+
+The [Jektify](https://github.com/jektify/jektify) code is stored in the folder "`lib`". Every time you change the version, it has to be changed in the file "`lib/jektify/version.rb`" respecting the version hierarchy.
+
 *JavaScript*
 
 [Jektify](https://github.com/jektify/jektify) uses javascript, where it is located in the folder "`src/js/jektify.js`". All Javascript code must be written to it, regardless of whether it uses ES6 or not. Gem will use it in the folder "`assets/js`", and you need to minify it with [Gulp](https://gulpjs.com/) to play it there. To do this, run on the terminal in the root directory of Jektify:
 
 ```shell
-gulp
+$ gulp
 ```
 
 *Sass*
@@ -55,7 +59,26 @@ The layout of [Jektify](https://github.com/jektify/jektify) is being attributed 
 
 *Pack*
 
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+Now, you can generate the gem of Jektify with the `bundle exec rake build` command, it will be bundled in the directory "`pkg`". To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+
+*Webpage*
+
+The development of the [Jektify](https://github.com/jektify/jektify) page is in the folder "`src/page`", it is a Jekyll template. To develop, you need to update the [Jektify](https://github.com/jektify/jektify) version in the `Gemfile` file according to the version of the gem in development of [Jektify](https://github.com/jektify/jektify).
+
+```yaml
+group :jekyll_plugins do
+  gem "jektify", "~> [VERSION_DEVELOPMENT]"
+end
+```
+
+After that execute:
+
+```shell
+$ bundle install
+$ ./serve
+```
+
+If Jektify adds new features and options, you should configure the file "` _config.yml`" in the Jektify block.
 
 ## Contributing
 
