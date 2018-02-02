@@ -41,6 +41,7 @@ module Jektify
         jektify__spotify_user = "<div class=\"jektify__user\"><a href=\"https://open.spotify.com/user/#{app_root_config["spotify"]["user"]}\" target=\"_blank\" class=\"jektify__user-link jektify__user-link--#{spotify_embed_theme} jektify__user-link--custom\" title=\"#{app_root_config["spotify"]["text"]}\"><span class=\"jektify__user-text jektify__user-text--#{spotify_embed_theme} jektify__user-text--custom\">#{app_root_config["spotify"]["text"]}</span></a></div>" if !app_root_config["spotify"]["user"].nil? && !app_root_config["spotify"]["text"].nil?
       end
 
+      
      # Render template if enable == true
      if app_root_config["enable"] == true
         %(<dl class="jektify jektify--#{spotify_embed_theme} jektify--custom">

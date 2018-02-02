@@ -9,7 +9,7 @@ module Jektify
     end
 
     def stylesheets_sass_path
-      File.join assets_path, 'sass'
+      File.join assets_path, 'vendor/jektify/sass'
     end
 
     def yml_config(yml)

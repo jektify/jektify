@@ -32,7 +32,7 @@ ________________________________________________________________________________
           "presets": ["env"]
         }))
         .pipe(uglify())
-        .pipe(gulp.dest('assets/js'))
+        .pipe(gulp.dest('assets/vendor/jektify/js'))
     });
 
 /* TASKS DEFAULTS

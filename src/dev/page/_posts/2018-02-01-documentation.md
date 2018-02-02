@@ -174,7 +174,7 @@ After setting the path and build the project, a folder will be created to export
 After setting the `_config.yml` file and imported the SASS of **Jektify**, you must import the JavaScript **Jektify** for HTML. The **Jektify** copy the Javascript to the folder of the compiled site `_site`.
 
 ```
-assets/js/jektify.min.js
+assets/vendor/jektify/js/jektify.min.js
 ```
 
 {: .markdown__paragraph}
@@ -183,7 +183,7 @@ Do import JavaScript in `_layout/default.html` at the end of
 
 {% highlight html linenos %}
 ...
-<script src="{ { "/assets/js/jektify.min.js" | prepend: site.baseurl } }" ></script>
+<script src="{ { "/assets/vendor/jektify/js/jektify.min.js" | prepend: site.baseurl } }" ></script>
 </body>
 {% endhighlight %}
 
@@ -192,10 +192,6 @@ Do import JavaScript in `_layout/default.html` at the end of
 
 {: .markdown__paragraph .markdown__blockquote}
 > `Note 2`: Do not forget to load the script Jektify after [JQuery]{:target="_blank"}{: .markdown__link}.
-
-{: .markdown__paragraph .markdown__blockquote}
-> `Note 3`: Understand your project! In this case here, it is being charged only
-with `baseurl` and slash before `assets`.
 
 {: .markdown__h2}
 ## Importing with CDN:

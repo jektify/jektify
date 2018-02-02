@@ -54,7 +54,7 @@ The [Jektify](https://github.com/jektify/jektify) code is stored in the folder "
 
 *JavaScript*
 
-[Jektify](https://github.com/jektify/jektify) uses javascript, where it is located in the folder "`src/dev/js/jektify.js`". All Javascript code must be written to it, regardless of whether it uses ES6 or not. Gem will use it in the folder "`assets/js`", and you need to minify it with [Gulp](https://gulpjs.com/) to play it there. To do this, run on the terminal in the root directory of Jektify:
+[Jektify](https://github.com/jektify/jektify) uses javascript, where it is located in the folder "`src/dev/js/jektify.js`". All Javascript code must be written to it, regardless of whether it uses ES6 or not. Gem will use it in the folder "`assets/vendor/jektify/js`", and you need to minify it with [Gulp](https://gulpjs.com/) to play it there. To do this, run on the terminal in the root directory of Jektify:
 
 ```shell
 $ gulp
@@ -64,7 +64,7 @@ The `cdn` folder should contain the original and mined jektify javascript file. 
 
 *Sass*
 
-The layout of [Jektify](https://github.com/jektify/jektify) is being attributed by the file "`assets/sass/_jektify.scss`", in this file you should write everything stylesheets [Jektify](https://github.com/jektify/jektify) using the methodology [BEM](getbem.com).
+The layout of [Jektify](https://github.com/jektify/jektify) is being attributed by the file "`assets/vendor/jektify/sass/_jektify.scss`", in this file you should write everything stylesheets [Jektify](https://github.com/jektify/jektify) using the methodology [BEM](getbem.com).
 
 *Pack*
 

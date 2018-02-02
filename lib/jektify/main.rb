@@ -32,6 +32,9 @@ module Jektify
       ENGINE.copy_sass_manual(APP_ROOT_CONFIG)
     end
 
+    # This method searches for folders and files in the assets root directory.
+    # After searching all files stores in an array and then copying to
+    # the folder "_site". 
     def static_files
       source = File.dirname(ENGINE.assets_path)
       asset_files.map do |file|
