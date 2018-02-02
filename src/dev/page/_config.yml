@@ -48,7 +48,7 @@ jektify:
       dir: "src/sass"
   title:
     enable: true
-    text: "Jekyll Spotify Plugin"
+    text: "Jektify"
   description:
     enable: true
     text: |
