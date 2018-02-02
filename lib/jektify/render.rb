@@ -36,9 +36,9 @@ module Jektify
       # This is a feature for adding a Spotify user link. Version 3.0.1
       # NOTe: If the user uses the previous version of the "_config.yml" file, there will be no conflict.
       if app_root_config["spotify"].nil?
-        jektify__spotify-user = ""
+        jektify__spotify_user = ""
       else
-        jektify__spotify-user = "<div class=\"jektify__user\"><a href=\"https://open.spotify.com/user/#{app_root_config["spotify"]["user"]}\" target=\"_blank\" class=\"jektify__user-link jektify__user-link--#{spotify_embed_theme} jektify__user-link--custom\" title=\"#{app_root_config["spotify"]["text"]}\"><span class=\"jektify__user-text jektify__user-text--#{spotify_embed_theme} jektify__user-text--custom\">#{app_root_config["spotify"]["text"]}</span></a></div>" if !app_root_config["spotify"]["user"].nil? && !app_root_config["spotify"]["text"].nil?
+        jektify__spotify_user = "<div class=\"jektify__user\"><a href=\"https://open.spotify.com/user/#{app_root_config["spotify"]["user"]}\" target=\"_blank\" class=\"jektify__user-link jektify__user-link--#{spotify_embed_theme} jektify__user-link--custom\" title=\"#{app_root_config["spotify"]["text"]}\"><span class=\"jektify__user-text jektify__user-text--#{spotify_embed_theme} jektify__user-text--custom\">#{app_root_config["spotify"]["text"]}</span></a></div>" if !app_root_config["spotify"]["user"].nil? && !app_root_config["spotify"]["text"].nil?
       end
 
      # Render template if enable == true
@@ -55,7 +55,7 @@ module Jektify
 
           <dd class="jektify__body jektify__body--#{spotify_embed_theme} jektify__body--custom" style="display: #{open_track}">
 
-            #{jektify__spotify-user}
+            #{jektify__spotify_user}
 
             <h1 class="jektify__title jektify__title--#{spotify_embed_theme} jektify__user--#{spotify_embed_theme} jektify__title--custom" style="display: #{jektify__title};">#{app_root_config["title"]["text"]}</h1>
 

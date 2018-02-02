@@ -252,61 +252,61 @@
      &--white{
        color: #282828;
      }
-   }
 
- /* .jektify__userlink */
-  &__userlink{
-    border-bottom: 1px solid transparent;
-    margin-left: 40px;
-    height: 20px;
-    background-image: url(https://raw.githubusercontent.com/williamcanin/jekyll-spotify-plugin/imgs/spotify.png);
-    background-repeat: no-repeat;
-    background-size: 20px;
-    margin-right: 20px;
+     /* .jektify__user-link */
+      &-link{
+        border-bottom: 1px solid transparent;
+        margin-left: 40px;
+        height: 20px;
+        background-image: url(https://raw.githubusercontent.com/jektify/jektify/master/assets/imgs/spotify_logo.png);
+        background-repeat: no-repeat;
+        background-size: 20px;
+        margin-right: 20px;
 
-    &:hover{
-      text-decoration: none;
-    }
-     /* .jektify__userlink--dark */
-    &--dark{ }
+        &:hover{
+          text-decoration: none;
+        }
+         /* .jektify__user-link--dark */
+        &--dark{ }
 
-     /* .jektify__userlink--white */
-    &--white{ }
-  }
-
- /* .jektify__usertext */
-  &__usertext{
-    font-size: 0.8em;
-    letter-spacing: 0.1em;
-    border-bottom: 1px solid transparent;
-    -webkit-transition: all .45s;
-    -o-transition: all .45s;
-    transition: all .45s;
-    margin-left: 30px;
-    margin-top: -12px;
-    float: left;
-
-    &:hover{
-      opacity: 0.87;
-    }
-
-    /* .jektify__usertext--dark */
-    &--dark{
-        border-bottom: 1px solid #1ed760;
-        color: #1ed760;
-
-    }
-
-    /* .jektify__usertext--white  */
-    &--white{
-      border-bottom: 1px solid #282828;
-      color: #282828;
-      &:hover{
-        color: #1ed760;
-        border-bottom: 1px solid #1ed760;
+         /* .jektify__user-link--white */
+        &--white{ }
       }
-    }
-  }
+
+     /* .jektify__user-text */
+      &-text{
+        font-size: 0.8em;
+        letter-spacing: 0.1em;
+        border-bottom: 1px solid transparent;
+        -webkit-transition: all .45s;
+        -o-transition: all .45s;
+        transition: all .45s;
+        margin-left: 30px;
+        margin-top: -12px;
+        float: left;
+
+        &:hover{
+          opacity: 0.87;
+        }
+
+        /* .jektify__user-text--dark */
+        &--dark{
+            border-bottom: 1px solid #1ed760;
+            color: #1ed760;
+
+        }
+
+        /* .jektify__user-text--white  */
+        &--white{
+          border-bottom: 1px solid #282828;
+          color: #282828;
+          &:hover{
+            color: #1ed760;
+            border-bottom: 1px solid #1ed760;
+          }
+        }
+      }
+   }
 
   /* .jektify__description */
   &__description{
