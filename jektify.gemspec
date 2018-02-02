@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["william.costa.canin@gmail.com"]
 
   spec.summary       = %q{Jekyll plugin to generate HTML code fragments to incorporate music from Spotify}
-  spec.homepage      = "https://github.com/williamcanin/jektify"
+  spec.homepage      = "https://github.com/jektify/jektify"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features|cdn|pkg|temp|src/dev|.babelrc|gulpfile.babel.js|package.json)}) }

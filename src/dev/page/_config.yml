@@ -14,7 +14,7 @@ url: "https://jektify.github.io" # the base hostname & protocol for your site.
 header:
   name: "jektify"
   url_download: "https://rubygems.global.ssl.fastly.net/gems"
-  lasted_version: "1.0.0"
+  lasted_version: "1.0.1"
 
 # Build settings
 destination: ./_site
