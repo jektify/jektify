@@ -8,7 +8,7 @@
 
 [Jektify](https://github.com/jektify/jektify) is beautiful and Customizable, much more appealing than a simple "iframe"!
 
-[Jektify](https://github.com/jektify/jektify) is a jewel using to enter a theme for track entry, playlist, albums and artists of [Spotify](https://www.spotify.com), in Jekyll templates.
+[Jektify](https://github.com/jektify/jektify) is a jewel using to enter a theme for track entry, playlist, albums and artists of [Spotify](https://www.spotify.com), in [Jekyll](https://jekyllrb.com) templates.
 
 Besides inserting music is fully responsive, adjusting as your page layout, even on mobile devices.
 

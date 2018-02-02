@@ -3,7 +3,7 @@
 GEM__ROOT=$PWD
 JEKYL__PROJECT="project"
 APP__NAME="jektify"
-APP__VERSION="0.1.0"
+APP__VERSION="1.0.0"
 
 function _clean(){
   cd $GEM__ROOT
