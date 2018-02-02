@@ -80,7 +80,7 @@ If you use CSS Jekyll, insert this line in the manifest `main.scss` SASS of your
 ### I do not use SASS Jekyll, now what?
 
 {: .markdown__paragraph}
-If you do not use the SASS Jekyll, see these settings [HERE](#do-not-use-sass-jekyll){: .markdown__link}
+If you do not use the SASS Jekyll, the Jektify also solves this constraint, keep reading [Configuration file "_config.yml"](#configuration-file-_configyml){: .markdown__link} and find out how to configure without needing to use the Jekyll SASS manager.
 
 {:.markdown__h2}
 ## Configuration file "_config.yml"
@@ -308,10 +308,10 @@ By default it is `spotify`. Will only change if you use `playlist` in the second
 ## SASS
 
 {: .markdown__paragraph}
-The **Jektify** already has an adequate customization to be responsive layouts, but still, leaves a customization feature own case the user does not choose the themes in hand and the way it fits in your page template.
+**Jektify** already has a suitable customization for sensitive layouts, but still leaves a case of personalization itself, the user chooses the themes at hand and the way it fits into your page template.
 
 {: .markdown__paragraph}
-To customize to your liking, use the class `.jektify` in your stylesheets (SASS). Use your browser's developer tool. E.g: Google Dev Tools.
+To customize to your liking, use the class `.jektify` in your stylesheets (SASS). Use your browser's developer tool. E.g: Google Dev Tools, to know which classes to change.
 
 {: .markdown__paragraph}
 The class structure `.jektify` this is:
