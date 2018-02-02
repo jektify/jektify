@@ -9,15 +9,7 @@ module Jektify
     end
 
     def stylesheets_sass_path
-      File.join assets_path, 'stylesheets/sass'
-    end
-
-    def stylesheets_sass_manual_path
-      File.join assets_path, 'stylesheets/sass/manual'
-    end
-
-    def javascripts_path
-      File.join assets_path, 'javascripts'
+      File.join assets_path, 'sass'
     end
 
     def yml_config(yml)
@@ -44,7 +36,7 @@ module Jektify
         # if !File.directory?(dir_copy)
         FileUtils::mkdir_p "#{dir_copy}" unless File.directory?(dir_copy)
         # end
-        FileUtils.copy_entry stylesheets_sass_manual_path, dir_copy
+        FileUtils.copy_entry stylesheets_sass_path, dir_copy
       end
     end
 

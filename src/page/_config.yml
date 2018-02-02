@@ -43,7 +43,7 @@ jektify:
     user: williamcanin
     text: See me no Spotify
   sass:
-    jekyll: true
+    jekyll: false
     other:
       dir: "src/sass"
   title:
