@@ -80,6 +80,12 @@ $ ./serve
 
 If Jektify adds new features and options, you should configure the file "` _config.yml`" in the Jektify block.
 
+*Travis*
+
+The [Jektify](https://github.com/jektify/jektify) uses [Travis](travis-ci.org) to do the gem tests, you should configure the Ruby version in `.travis.yml` (hidden) if necessary.
+
+The "`bin/travis`" file will be the file that [Travis](travis-ci.org) will use to perform the script tests, in this file you must change the Jektify version in the variable "`APP__VERSION`" to the version that the Jekyll test project will use [Jektify](https://github.com/jektify/jektify).
+
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/jektify/jektify. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.

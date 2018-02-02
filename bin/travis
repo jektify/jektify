@@ -22,6 +22,7 @@ echo "${APP__NAME^^} gem installed!"
 _clean
 
 # Created project Jekyll
+mkdir -p test/travis
 bundle exec jekyll new test/travis/$JEKYL__PROJECT; cd $_
 
 # Add dependency in Gemfile for Jekyll project
