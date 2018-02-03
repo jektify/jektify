@@ -321,55 +321,42 @@ The class structure `.jektify` this is:
 {% highlight scss linenos %}
 .jektify{
   &--custom{ }
-
   &__header{
     &--custom{}
   }
-
   &__brand{
     &--custom{}
   }
-
   &__year{
     &--custom{}
   }
-
   &__button{
     &--custom{}
   }
-
   &__user{
     &--custom{}
-
     &-link{
       &--custom{}
     }
-
     &-text{
       &--custom{}
     }
   }
-
   &__body{
     &--custom{}
   }
-
   &__title{
     &--custom{}
   }
-
   &__description{
     &--custom{}
   }
-
   &__tracklist{
     &--custom{}
   }
-
   &__track{
     &--custom{}
   }
-
 }
 
 {% endhighlight %}
