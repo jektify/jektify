@@ -45,7 +45,7 @@ exclude: ["_gems","Gemfile","*.lock","build","serve"]
 
 plugins:
   - bootstrap
-  - jektify
+
 
 # ----------------------------------------------------------------------
 # Jektify - Configuration for _config.yml

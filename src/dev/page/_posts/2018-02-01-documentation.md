@@ -101,7 +101,7 @@ jektify:
   enable: true
   open: true
   toggle:
-    using: true  
+    enable: true  
   spotify:
     user: williamcanin
     text: See me no Spotify
@@ -129,7 +129,7 @@ jektify:
 `[ Line 5 ]`{: .markdown__code} - Option: [ true / false ] Enables or disables the plugin for all site.
 
 {: .markdown__paragraph}
-`[ Line 6 ]`{: .markdown__code} - Option: [ true / false ]  In this line you define whether you want the "Jektify" let the music box in open or closed mode in page. Remember that if the "`toggle => using`" option is set to `false`, any value in this option will have no implication.
+`[ Line 6 ]`{: .markdown__code} - Option: [ true / false ]  In this line you define whether you want the "Jektify" let the music box in open or closed mode in page. Remember that if the "`toggle => enable`" option is set to `false`, any value in this option will have no implication.
 
 {: .markdown__blockquote .markdown__paragraph}
 > If a different value of these two themes is inserted, the Jekyll Spotify
