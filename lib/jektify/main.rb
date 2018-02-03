@@ -34,7 +34,7 @@ module Jektify
 
     # This method searches for folders and files in the assets root directory.
     # After searching all files stores in an array and then copying to
-    # the folder "_site". 
+    # the folder "_site".
     def static_files
       source = File.dirname(ENGINE.assets_path)
       asset_files.map do |file|
@@ -108,7 +108,7 @@ module Jektify
 
       ENGINE.error_different_true_false(APP_ROOT_CONFIG["description"]["enable"], "[x] Error: The property 'spotify => description => enable' in file '_config.yml' does not exist or its value is incorrect. Use: [ true | false ]") unless APP_ROOT_CONFIG["description"].nil?
 
-      ENGINE.error_different_true_false(APP_ROOT_CONFIG["toggle"]["enable"], "[x] Error: The property 'spotify => toggle => using' in file '_config.yml' does not exist or its value is incorrect. Use: [ true | false ]") unless APP_ROOT_CONFIG["toggle"].nil?
+      ENGINE.error_different_true_false(APP_ROOT_CONFIG["toggle"]["enable"], "[x] Error: The property 'spotify => toggle => enable' in file '_config.yml' does not exist or its value is incorrect. Use: [ true | false ]") unless APP_ROOT_CONFIG["toggle"].nil?
 
       # If there are no errors starting the plugin
       RENDER.rendering(APP_NAME, APP_ROOT_CONFIG, spotify_embed_category, spotify_embed_url, spotify_embed_theme)

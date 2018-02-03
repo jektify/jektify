@@ -13,3 +13,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [1.0.1] - 2018-01-02
 ### Change
 - Error correction on link homepage in gemspec
+
+## [1.0.2] - 
+### Change
+- Fixing error in the last method "error_different_true_false" in the file "main.rb", from "using" to "enable".
