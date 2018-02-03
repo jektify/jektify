@@ -54,6 +54,7 @@ group :jekyll_plugins do
 end
 {% endhighlight %}
 
+{: .markdown__paragraph}
 or run command:
 
 {% highlight bash linenos %}
@@ -173,6 +174,7 @@ After setting the path and build the project, a folder will be created to export
 {: .markdown__paragraph}
 After setting the `_config.yml` file and imported the SASS of **Jektify**, you must import the JavaScript **Jektify** for HTML. The **Jektify** copy the Javascript to the folder of the compiled site `_site`.
 
+{: .markdown__code}
 ```
 assets/vendor/jektify/js/jektify.min.js
 ```
@@ -237,6 +239,7 @@ It will open a dialog, when open click `URI` to copy.
 {: .markdown__paragraph}
 What you will get looks like this:
 
+{: .markdown__code}
 ```
 spotify:track:08mG3Y1vljYA6bvDt4Wqkj
 ```

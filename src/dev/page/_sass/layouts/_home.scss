@@ -72,7 +72,17 @@
         padding: 15px 15px 4px 15px;
         border-left: 5px solid $color__jektify;
       }
-      &__code{}
+      &__code{
+        padding: 15px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.2em;
+        font-weight: 600;
+        code{
+          background-color: $color__jektify;
+          color: #282828;
+          padding: 15px;
+        }
+      }
       &__link{
         color: $color__jektify;
         border-bottom: 1px solid $color__jektify;
