@@ -392,10 +392,10 @@ Here is examples of how the "Jektify" will behave in your page:
 {% jektify spotify/album/6OwvO40ahugJE5PH4TjqTg/dark %}
 
 {: .markdown__h1}
-# Report questions
+# Report questions / Feedbacks
 
 {: .markdown__paragraph}
-You can take doubt here: [GitHub Issues](https://github.com/jektify/jektify/issues){:target="_blank"}{: .markdown__link}
+You can take questions in [GitHub Issues](https://github.com/jektify/jektify/issues){:target="_blank"}{: .markdown__link},
 
 {: .markdown__h1}
 # License
