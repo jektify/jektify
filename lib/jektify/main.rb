@@ -28,7 +28,9 @@ module Jektify
       @site = site
 
       # It will only generate the Javascript file for the user, if the 'Toggle' feature is enabled in the file "_config.yml".
-      @site.static_files.concat static_files if APP_ROOT_CONFIG["toggle"].nil? || APP_ROOT_CONFIG["toggle"]["enable"] == true
+      if APP_ROOT_CONFIG["enable"] == true
+        @site.static_files.concat static_files if APP_ROOT_CONFIG["toggle"].nil? || APP_ROOT_CONFIG["toggle"]["enable"] == true
+      end
       ENGINE.copy_sass_manual(APP_ROOT_CONFIG)
     end
 
