@@ -185,12 +185,14 @@ Do import JavaScript in `_layout/default.html` at the end of
 
 {% highlight html linenos %}
 ...
+{ % if jektify.enable == true and jektify.toggle.enable == true % }
 <script src="{ { "/assets/vendor/jektify/js/jektify.min.js" | prepend: site.baseurl } }" ></script>
+{ % endif % }
 </body>
 {% endhighlight %}
 
 {: .markdown__paragraph .markdown__blockquote}
-> `Note 1`: Do not leave space between `{ {` and `} }`
+> `Note 1`: Do not leave space between `{ {` and `} }`, `{ %` and `% }`
 
 {: .markdown__paragraph .markdown__blockquote}
 > `Note 2`: Do not forget to load the script Jektify after [JQuery]{:target="_blank"}{: .markdown__link}.
