@@ -185,7 +185,7 @@ Do import JavaScript in `_layout/default.html` at the end of
 
 {% highlight html linenos %}
 ...
-{ % if jektify.enable == true and jektify.toggle.enable == true % }
+{ % if site.jektify.enable == true and site.jektify.toggle.enable == true % }
 <script src="{ { "/assets/vendor/jektify/js/jektify.min.js" | prepend: site.baseurl } }" ></script>
 { % endif % }
 </body>
