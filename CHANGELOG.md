@@ -17,3 +17,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [1.0.2] - 
 ### Change
 - Fixing error in the last method "error_different_true_false" in the file "main.rb", from "using" to "enable".
+
+## [1.0.3] - 
+### Change
+- Compatibility with new dependency versions: Jekyll and Sass.

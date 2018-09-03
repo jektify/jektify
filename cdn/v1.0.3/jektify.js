@@ -1,5 +1,5 @@
 /*!
-  * Jektify v1.0.0 (https://github.com/jektify/jektify)
+  * Jektify v1.0.3 (https://github.com/jektify/jektify)
   * Copyright 2018
   * Licensed under MIT (https://raw.githubusercontent.com/jektify/jektify/master/LICENSE.txt)
   */

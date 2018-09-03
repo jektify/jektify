@@ -20,8 +20,8 @@ Gem::Specification.new do |spec|
 
   spec.required_ruby_version = '>= 2.3.6'
 
-  spec.add_dependency "jekyll", "~> 3.7", "~> 3.7.0"
-  spec.add_dependency "sass", "~> 3.5", "~> 3.5.5"
+  spec.add_dependency "jekyll", "~> 3.8", "~> 3.8.2"
+  spec.add_dependency "sass", "~> 3.5", "~> 3.5.6"
 
   spec.add_development_dependency "bundler", "~> 1.16"
   spec.add_development_dependency "rake", "~> 12.3"
