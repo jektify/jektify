@@ -33,7 +33,7 @@ gem "json","~> 2.1"
 EOF
 
 # Add Jektify in file Gemfile
-sed -i "/  gem \"jekyll-feed\", \"~> 0.6\"/a \  \gem \"$APP__NAME\", \"~> $APP__VERSION\"" Gemfile
+sed -i "/  gem \"jekyll-feed\", \"~> 0.10\"/a \  \gem \"$APP__NAME\", \"~> $APP__VERSION\"" Gemfile
 
 # Add plugin of Jektify in file _config.yml
 sed -i "/- jekyll-feed/a\ \ - $APP__NAME" _config.yml
