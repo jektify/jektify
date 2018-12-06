@@ -1,4 +1,4 @@
-Path CDNs: https://cdn.rawgit.com/jektify/jektify/master/cdn
+Path CDNs: https://cdn.jsdelivr.net/gh/jektify/jektify/cdn
 
 
 The CDNs of this plugin are maintained by: https://rawgit.com/
