@@ -30,12 +30,6 @@ Besides inserting music is fully responsive, adjusting as your page layout, even
 {: .markdown__paragraph}
 You need to install, so let's mission:
 
-{:.markdown__h1}
-# Dependencies
-
-<a class="markdown__link no-decoration" href="https://gemnasium.com/github.com/jektify/jektify" target="_blank"><img src="https://gemnasium.com/badges/github.com/jektify/jektify.svg" alt="Dependency Status" /></a>
-
-
 {: .markdown__paragraph}
 You can see the dependencies of gem Jektify through [Gemnasium](https://gemnasium.com/github.com/jektify/jektify){:target="_blank"}{: .markdown__link}. All dependencies are listed.
 
