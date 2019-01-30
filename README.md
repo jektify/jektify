@@ -65,7 +65,7 @@ The [Jektify](https://github.com/jektify/jektify) code is stored in the folder "
 $ gulp
 ```
 
-The `cdn` folder should contain the original and mined jektify javascript file. It will have a folder structure with the name of each version of [Jektify](https://github.com/jektify/jektify). The service that makes CDN available is [RawGit](https://rawgit.com/).
+The `cdn` folder should contain the original and mined jektify javascript file. It will have a folder structure with the name of each version of [Jektify](https://github.com/jektify/jektify). The service that makes CDN available is [Jsdelivr](https://www.jsdelivr.com/).
 
 *Sass*
 
