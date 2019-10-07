@@ -43,10 +43,28 @@ cat << EOF >> _config.yml
 
 $APP__NAME:
   enable: true
+  open: true
+  toggle:
+    enable: true
+  spotify:
+    user: # "you_user_spotify"
+    text: "See me no Spotify"
+  sass:
+    jekyll: true
+    other:
+      dir: "way/to/your/SASS"
+  title:
+    enable: false
+    text: "Music name"
+  description:
+    enable: false
+    text: |
+      Jekyll plugin to generate html snippets for embedding Spotify Musics.
+      To listen to the full song, open your Spotify and start these musics.
 EOF
 
 # Add liquid in markdown of Jektify
-echo "{ % $APP__NAME spotify/track/62qsgMnY4wg8nE5qjyOdWO/dark % }" >> _posts/*-welcome-to-jekyll.markdown
+echo "{% $APP__NAME spotify/track/62qsgMnY4wg8nE5qjyOdWO/dark %}" >> _posts/*-welcome-to-jekyll.markdown
 
 # Re-Update Gemfile.lock for project Jekyll
 bundle install
