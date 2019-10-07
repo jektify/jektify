@@ -95,7 +95,7 @@
 
   /* .jektify__brand */
   &__brand{
-    text-decoration: none;
+    text-decoration: none !important;
     margin-right: 17px;
     padding-bottom: 4px;
     cursor: pointer;
@@ -107,7 +107,7 @@
     transition: all .45s;
 
     &:hover{
-      text-decoration: none;
+      text-decoration: none !important;
       opacity: 0.87;
     }
 

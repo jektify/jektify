@@ -5,7 +5,6 @@ gem "bigdecimal"
 gem "pygments.rb"
 gem "rake"
 gem "jekyll"
-gem "bootstrap"
 group :jekyll_plugins do
-  gem "jektify", "~> 1.0.3"
+  gem "jektify", "~> 1.0.4"
 end

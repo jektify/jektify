@@ -42,7 +42,7 @@ With [Jektify]{: .markdown__link} running, it uses dependency on [JQuery]{:targe
 {: .markdown__paragraph}
 Add **Jektify** to your Gemfile and run the command: `bundle install`:
 
-{% highlight ruby linenos %}
+{% highlight ruby %}
 group :jekyll_plugins do
   gem "jektify"
 end
@@ -51,7 +51,7 @@ end
 {: .markdown__paragraph}
 or run command:
 
-{% highlight bash linenos %}
+{% highlight bash %}
 gem install jektify
 {% endhighlight %}
 
@@ -64,7 +64,7 @@ gem install jektify
 {: .markdown__paragraph}
 If you use CSS Jekyll, insert this line in the manifest `main.scss` SASS of your project:
 
-{% highlight sass linenos %}
+{% highlight sass %}
 @import "jektify";
 {% endhighlight %}
 
@@ -87,7 +87,7 @@ Now, you need to configure the file `_config.yml` your theme Jekyll.
 The following lines should be inserted:
 
 
-{% highlight yaml linenos %}
+{% highlight yaml %}
 plugins:
   - jektify
 
@@ -147,7 +147,7 @@ Plugin will have operation error.
 {: .markdown__paragraph}
 After setting the path and build the project, a folder will be created to export the SASS of Jektify, in the path of the `dir` . With this, you must load the exported SASS in your manifest (`main.scss`). For example:
 
-{% highlight scss linenos %}
+{% highlight scss  %}
 @import "{way/to/your/SASS/vendor}/jektify/jektify"
 {% endhighlight %}
 
@@ -177,7 +177,7 @@ assets/vendor/jektify/js/jektify.min.js
 Do import JavaScript in `_layout/default.html` at the end of
 </ body>, like this:
 
-{% highlight html linenos %}
+{% highlight html  %}
 ...
 { % if site.jektify.enable == true and site.jektify.toggle.enable == true % }
 <script src="{ { "/assets/vendor/jektify/js/jektify.min.js" | prepend: site.baseurl } }" ></script>
@@ -197,7 +197,7 @@ Do import JavaScript in `_layout/default.html` at the end of
 {: .markdown__paragraph}
 You can use CDN of the respective version:
 
-{% highlight html linenos %}
+{% highlight html  %}
 ---
 
 <script src="https://cdn.jsdelivr.net/gh/jektify/jektify/cdn/<VERSION>/jektify.min.js"></script>
@@ -250,7 +250,7 @@ The **Jektify** will use this URI, the only difference being that instead of bei
 {: .markdown__paragraph}
 The **Jektify** it works with the following tags:
 
-{% highlight ruby linenos %}
+{% highlight ruby  %}
 { % jektify [user]/[type]/[id]/[theme] % }
 {% endhighlight %}
 
@@ -287,7 +287,7 @@ By default it is `spotify`. Will only change if you use `playlist` in the second
 {: .markdown__paragraph}
 **Example:**
 
-{% highlight ruby linenos %}
+{% highlight ruby  %}
 { % jektify spotify/track/62qsgMnY4wg8nE5qjyOdWO/dark % }
 
 { % jektify williamcanin/playlist/48brJJZdVifY79QAFmEImq/light % }
@@ -318,7 +318,7 @@ The class structure `.jektify` this is:
 {: .markdown__blockquote .markdown__paragraph}
 > NOTE: You should put CSS properties inside the subclass "--custom".
 
-{% highlight scss linenos %}
+{% highlight scss  %}
 .jektify{
   &--custom{ }
   &__header{
