@@ -66,6 +66,14 @@ EOF
 # Add liquid in markdown of Jektify
 echo "{% $APP__NAME spotify/track/62qsgMnY4wg8nE5qjyOdWO/dark %}" >> _posts/*-welcome-to-jekyll.markdown
 
+# Bundler configuration folder
+mkdir -p .bundle
+cat << EOF > .bundle/config
+---
+BUNDLE_PATH: "vendor/bundle"
+BUNDLE_DISABLE_SHARED_GEMS: "true"
+EOF
+
 # Re-Update Gemfile.lock for project Jekyll
 bundle install
 
