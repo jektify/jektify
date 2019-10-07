@@ -48,8 +48,10 @@
   &--dark{
     background-color: $jektify__background-color--dark;
     border: 1px solid #131313;
+    text-decoration: none !important;
     &:hover{
       opacity: 0.99;
+      text-decoration: none !important;
     }
   }
 
@@ -57,6 +59,7 @@
   &--white{
     background-color: $jektify__background-color--white;
     border: 1px solid #adadad;
+    text-decoration: none !important;
   }
 
 
@@ -78,11 +81,13 @@
       /* .jektify__header--dark */
       &--dark{
         background-color: $jektify__background-color--dark;
+        text-decoration: none !important;
       }
 
       /* .jektify__header--white */
       &--white{
         background-color: $jektify__background-color--white;
+        text-decoration: none !important;
       }
 
   }
