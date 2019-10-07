@@ -50,12 +50,13 @@ module Jektify
     end
 
     def configure_sass(utils)
-      require "sass"
+      require "sassc"
       # DEPRECATED Bootstrap
       # require "bootstrap"
       # Inspired by bootstrap-sass
-      ::Sass.load_paths << utils.stylesheets_sass_path
-      ::Sass::Script::Number.precision = [8, ::Sass::Script::Number.precision].max
+      ::SassC.load_paths << utils.stylesheets_sass_path
+      # ::SassC::Script::Value::Number
+      ::SassC::Script::Value::Number.precision = [8, ::SassC::Script::Value::Number.precision].max
     end
 
   end # class Engine
