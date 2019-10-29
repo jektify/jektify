@@ -392,7 +392,15 @@ Here is examples of how the "Jektify" will behave in your page:
 # Report questions / Feedbacks
 
 {: .markdown__paragraph}
-You can take questions in [GitHub Issues](https://github.com/jektify/jektify/issues){:target="_blank"}{: .markdown__link},
+You can take questions in [GitHub Issues](https://github.com/jektify/jektify/issues){:target="_blank"}{: .markdown__link}.
+
+{: .markdown__h1}
+# Donation
+
+{: .markdown__paragraph}
+If you liked my work, buy me a coffee <3
+
+[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=YBK2HEEYG8V5W&source)
 
 {: .markdown__h1}
 # License
