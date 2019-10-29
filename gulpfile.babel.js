@@ -25,7 +25,7 @@ ________________________________________________________________________________
 ______________________________________________________________________________________ */
 
     gulp.task('javascripts', (cb) => {
-      return gulp.src('src/dev/js/jektify.js')
+      return gulp.src('src/js/jektify.js')
         .pipe(jshint())
         .pipe(rename({ suffix: '.min' }))
         .pipe(babel({
