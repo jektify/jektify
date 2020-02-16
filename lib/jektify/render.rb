@@ -63,7 +63,16 @@ module Jektify
             <p class="jektify__description jektify__description--#{spotify_embed_theme} jektify__description--custom" style="display: #{jektify__description};">#{app_root_config["description"]["text"]}</p>
 
             <div class="jektify__tracklist jektify__tracklist--#{spotify_embed_theme} jektify__tracklist--custom">
-              <iframe id="jektify__track" class="jektify__track jektify__track--#{spotify_embed_theme} jektify__track--custom" src="#{spotify_embed_url}" width="100%" height="#{box_height}" frameborder="0" allowtransparency="true"></iframe>
+              <iframe id="jektify__track"
+                class="jektify__track jektify__track--#{spotify_embed_theme} 
+                jektify__track--custom" 
+                src="#{spotify_embed_url}" 
+                width="100%" 
+                height="#{box_height}" 
+                frameborder="0" 
+                allowtransparency="true" 
+                allow="encrypted-media">
+              </iframe>
             </div>
           </dd>
         </dl>)
