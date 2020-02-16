@@ -1,8 +1,8 @@
 {
   "name": "jektify",
-  "version": "1.0.1",
+  "version": "1.0.5",
   "description": "Jekyll plugin to generate HTML code fragments to incorporate music from Spotify",
-  "main": "gulpfile.babel.js",
+  "main": "gulpfile.js",
   "directories": {
     "lib": "lib",
     "test": "test"
@@ -27,14 +27,11 @@
   },
   "homepage": "https://github.com/williamcanin/jektify#readme",
   "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-core": "^6.26.0",
-    "babel-preset-env": "^1.6.1",
-    "gulp": "^3.9.0",
-    "gulp-babel": "^7.0.1",
-    "gulp-jshint": "^2.1.0",
-    "gulp-rename": "^1.2.2",
-    "gulp-uglify": "^3.0.0",
-    "jshint": "^2.9.5"
+    "@babel/core": "^7.8.4",
+    "@babel/preset-env": "^7.8.4",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-uglify": "^3.0.2"
   }
 }

@@ -1,7 +1,7 @@
 /*!
-  * Jektify v1.0.0 (https://williamcanin.me/jektify/)
-  * Copyright 2018
-  * Licensed under MIT (https://github.com/williamcanin/jektify/blob/master/LICENSE.txt)
+  * Jektify v1.0.5 (https://williamcanin.me/jektify/)
+  * Copyright 2020
+  * Licensed under MIT (https://github.com/williamcanin/jektify/blob/master/LICENSE)
   */
 $(document).ready( () =>{
   $(".jektify__button").click(function(){
