@@ -1,16 +1,13 @@
+---
 language: ruby
 rvm:
   - 2.6.2
+  - 2.7.0
 before_install:
   - gem update --system
-  - gem install bundler
+  - gem install bundler -v 2.1.4
 install:
   - bundle install
 script:
   - bin/setup
   - bin/travis
-branches:
-  only:
-    - master
-notifications:
-  email: false

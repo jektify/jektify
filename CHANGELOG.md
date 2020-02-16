@@ -21,3 +21,11 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [1.0.3] - 
 ### Change
 - Compatibility with new dependency versions: Jekyll and Sass.
+
+## [1.0.4] - 
+### Change
+- Nothing interesting, just updating dependencies and maintaining compatibility.
+
+## [1.0.5] - 
+### Change
+- Nothing interesting, just updating dependencies and maintaining compatibility.

@@ -7,7 +7,7 @@ APP__VERSION="1.0.5"
 
 function _clean(){
   cd $GEM__ROOT
-  rm -rf "test/travis/$JEKYL__PROJECT"
+  rm -rf "tests/travis/$JEKYL__PROJECT"
 }
 
 # Generated Jektify gem
@@ -22,8 +22,8 @@ echo "${APP__NAME^^} gem installed!"
 _clean
 
 # Created project Jekyll
-mkdir -p test/travis
-bundle exec jekyll new test/travis/$JEKYL__PROJECT; cd $_
+mkdir -p tests/travis
+bundle exec jekyll new tests/travis/$JEKYL__PROJECT; cd $_
 
 # Add dependency in Gemfile for Jekyll project
 cat << EOF >> Gemfile
