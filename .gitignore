@@ -5,7 +5,6 @@
 /.yardoc
 /_yardoc/
 /coverage/
-/.github/
 /doc/
 /pkg/
 /spec/reports/
