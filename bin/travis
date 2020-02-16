@@ -28,7 +28,7 @@ bundle exec jekyll new test/travis/$JEKYL__PROJECT; cd $_
 # Add dependency in Gemfile for Jekyll project
 cat << EOF >> Gemfile
 
-gem "bigdecimal","~> 1.4"
+gem "bigdecimal","~> 2.0"
 gem "json","~> 2.2"
 EOF
 
