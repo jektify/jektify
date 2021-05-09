@@ -1,6 +1,7 @@
 # Jektify
 
 [![Gem Version](https://badge.fury.io/rb/jektify.svg)](https://badge.fury.io/rb/jektify)
+[![Ruby](https://github.com/jektify/jektify/actions/workflows/ruby.yml/badge.svg)](https://github.com/jektify/jektify/actions/workflows/ruby.yml)
 [![Build Status](https://travis-ci.org/jektify/jektify.svg?branch=master)](https://travis-ci.org/jektify/jektify)
 [![security](https://hakiri.io/github/jektify/jektify/master.svg)](https://hakiri.io/github/jektify/jektify/master)
 
