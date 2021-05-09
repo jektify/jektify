@@ -14,18 +14,22 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ### Change
 - Error correction on link homepage in gemspec
 
-## [1.0.2] - 
+## [1.0.2] -
 ### Change
 - Fixing error in the last method "error_different_true_false" in the file "main.rb", from "using" to "enable".
 
-## [1.0.3] - 
+## [1.0.3] -
 ### Change
 - Compatibility with new dependency versions: Jekyll and Sass.
 
-## [1.0.4] - 
+## [1.0.4] -
 ### Change
 - Nothing interesting, just updating dependencies and maintaining compatibility.
 
-## [1.0.5] - 
+## [1.0.5] -
 ### Change
 - Nothing interesting, just updating dependencies and maintaining compatibility.
+
+## [1.0.6] -
+### Change
+- Nothing interesting, just updating dependencies and maintaining compatibility Jekyll >= v4.2.0

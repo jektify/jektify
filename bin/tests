@@ -3,11 +3,11 @@
 GEM__ROOT=$PWD
 JEKYL__PROJECT="project"
 APP__NAME="jektify"
-APP__VERSION="1.0.5"
+APP__VERSION="1.0.6"
 
 function _clean(){
   cd $GEM__ROOT
-  rm -rf "tests/travis/$JEKYL__PROJECT"
+  rm -rf "tests/vm/$JEKYL__PROJECT"
 }
 
 # Generated Jektify gem
@@ -22,17 +22,18 @@ echo "${APP__NAME^^} gem installed!"
 _clean
 
 # Created project Jekyll
-mkdir -p tests/travis
-bundle exec jekyll new tests/travis/$JEKYL__PROJECT; cd $_
+mkdir -p tests/vm
+bundle exec jekyll new tests/vm/$JEKYL__PROJECT; cd $_
 
 # Add dependency in Gemfile for Jekyll project
 cat << EOF >> Gemfile
-gem "bigdecimal", "~> 2.0"
-gem "json", "~> 2.3"
+gem "bigdecimal", "~> 3.0.2"
+gem "webrick", "~> 1.7.0"
+gem "json", "~> 2.5.1"
 EOF
 
 # Add Jektify in file Gemfile
-sed -i "/  gem \"jekyll-feed\", \"~> 0.12\"/a \  \gem \"$APP__NAME\", \"~> $APP__VERSION\"" Gemfile
+sed -i "/  gem \"jekyll-feed\", \"~> 0.15.1\"/a \  \gem \"$APP__NAME\", \"~> $APP__VERSION\"" Gemfile
 
 # Add plugin of Jektify in file _config.yml
 sed -i "/- jekyll-feed/a\ \ - $APP__NAME" _config.yml

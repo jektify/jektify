@@ -40,22 +40,13 @@ module Jektify
       end
     end
 
-    # DEPRECATED
-    # def parameter_user(input_split)
-    #   input_split[0].strip
-    # end
-
     def split_params(params)
       params.split("/")
     end
 
     def configure_sass(utils)
       require "sassc"
-      # DEPRECATED Bootstrap
-      # require "bootstrap"
-      # Inspired by bootstrap-sass
       ::SassC.load_paths << utils.stylesheets_sass_path
-      # ::SassC::Script::Value::Number
       ::SassC::Script::Value::Number.precision = [8, ::SassC::Script::Value::Number.precision].max
     end
 

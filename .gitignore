@@ -24,3 +24,5 @@
 /package-lock.json
 /Gemfile.lock
 **/*/Gemfile.lock
+tests/travis/
+tests/vm
