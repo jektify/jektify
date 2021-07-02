@@ -96,8 +96,14 @@ module Jektify
 
       # Customizing Url Spotify
       # E.g: { % spotify [user]/[type]/[id]/[theme] % }
-      spotify_embed_url = "https://embed.spotify.com/?uri=spotify:#{spotify_embed_category}:#{spotify_id}&theme=#{spotify_embed_theme}"
-      spotify_embed_url = "https://embed.spotify.com/?uri=spotify:user:#{spotify_user}:#{spotify_embed_category}:#{spotify_id}&theme=#{spotify_embed_theme}" unless spotify_embed_category != "playlist"
+      # spotify_embed_url = "https://embed.spotify.com/?uri=spotify:#{spotify_embed_category}:#{spotify_id}&theme=#{spotify_embed_theme}"
+      # spotify_embed_url = "https://embed.spotify.com/?uri=spotify:user:#{spotify_user}:#{spotify_embed_category}:#{spotify_id}&theme=#{spotify_embed_theme}" unless spotify_embed_category != "playlist"
+
+      # Player color based on box theme.
+      spotify_embed_theme == "dark" ? player_color = "0" : player_color = "1"
+
+      # Spotify Open URL Base (Web Player)
+      spotify_embed_url = "https://open.spotify.com/embed/#{spotify_embed_category}/#{spotify_id}?theme=#{player_color}"
 
 
       # Checks a series of error values in the settings of Jektify in _config.yml
