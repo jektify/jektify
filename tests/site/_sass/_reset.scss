@@ -1,0 +1,24 @@
+/**
+ * Reset some basic elements
+ */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a{
+  &:hover,&:active,&:focus,&:visited{
+    outline: none;
+  }
+}
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
