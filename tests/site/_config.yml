@@ -24,7 +24,7 @@ jektify:
   sass:
     jekyll: true
     other:
-      dir: "way/to/your/SASS"
+      dir: "_sass"
   title:
     enable: false
     text: "Music name"
