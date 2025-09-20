@@ -3,7 +3,9 @@ set -euo pipefail
 IFS=$'\n\t'
 set -vx
 
+npm install
 bundle install
 
 # Do any other automated setup that you need to do here
+npm run build
 bundle exec rake build
