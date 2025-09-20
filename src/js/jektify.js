@@ -3,10 +3,22 @@
   * Copyright 2020
   * Licensed under MIT (https://github.com/williamcanin/jektify/blob/master/LICENSE)
   */
-$(document).ready( () =>{
-  $(".jektify__button").click(function(){
-    $(this).parent().next().slideToggle();
-    $(this).removeClass('jektify__button--closed');
-    $(this).toggleClass("jektify__button--open");
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll(".jektify__button").forEach(button => {
+    button.addEventListener("click", () => {
+      const nextElem = button.parentElement.nextElementSibling;
+      if (nextElem) {
+        // toggle efeito tipo slide (simplificado)
+        if (nextElem.style.maxHeight) {
+          nextElem.style.maxHeight = null;
+        } else {
+          nextElem.style.maxHeight = nextElem.scrollHeight + "px";
+        }
+      }
+
+      button.classList.remove("jektify__button--closed");
+      button.classList.toggle("jektify__button--open");
+    });
   });
 });
+

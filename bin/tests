@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+ROOT=$PWD
+GEMFILE=${ROOT}/example/Gemfile
+
+## Adding PATH jektify
+sed -i "s|^  gem \"jektify\", path: .*|  gem \"jektify\", path: \"$PWD\"|g" "$GEMFILE"
+
+### Build example Jekyll
+bundle install --gemfile="$GEMFILE"
+
+### Build project Jekyll
+BUNDLE_GEMFILE="$GEMFILE" bundle exec jekyll b -s ${ROOT}/example -d ${ROOT}/example/_site
+
+echo "Tests, Done!"

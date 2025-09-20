@@ -1,28 +1,22 @@
 // Script: gulpfile.js
 // by: William C. Canin
 
-let gulp = require('gulp');
-let babel = require('gulp-babel');
-let uglify = require('gulp-uglify');
-let rename = require('gulp-rename');
+const { src, dest, series } = require('gulp');
+const uglify = require('gulp-uglify');
+const rename = require('gulp-rename');
 
-// function javascripts
+// Função para processar JS
 function javascripts() {
-  return gulp
-    .src('src/js/jektify.js')
-    .pipe(rename({ suffix: ".min" }))
-    .pipe(babel({
-        presets: ['@babel/env']
-    }))
-    .pipe(uglify())
-    .pipe(gulp.dest('assets/vendor/jektify/js'))
+  return src('src/js/jektify.js')      // arquivo de entrada
+    .pipe(rename({ suffix: '.min' }))  // adiciona .min
+    .pipe(uglify())                     // minifica
+    .pipe(dest('assets/vendor/jektify/js')); // pasta de saída
 }
 
+// Task build
+const build = series(javascripts);
 
-// task build
-const build = gulp.series(gulp.parallel(javascripts));
-
-// export tasks
+// Exporta tasks
 exports.js = javascripts;
 exports.build = build;
 exports.default = build;
