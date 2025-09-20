@@ -32,4 +32,13 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [1.0.6] -
 ### Change
-- Nothing interesting, just updating dependencies and maintaining compatibility Jekyll >= v4.2.0
+- Nothing interesting, just updating dependencies and maintaining compatibility Jekyll = v4.2.0
+
+## [1.0.7] -
+### Change
+- Bug fix. There was a bug when refreshing the page with the toggle open.
+
+## [1.0.8] -
+### Change
+- Removing "sassc" dependency and using "sass". Updating compatibility for Jekyll >= 4.4
+- Adding "example" project Jekyll.

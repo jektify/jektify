@@ -54,18 +54,15 @@ The [Jektify](https://github.com/jektify/jektify) code is stored in the folder "
 * lib/jektify/version.rb
 * bin/tests
 * package.json
-* gulpfile.babel.js
-* cdn/v[VERSION]
+* gulpfile.js
 
 *JavaScript*
 
 [Jektify](https://github.com/jektify/jektify) uses javascript, where it is located in the folder "`src/dev/js/jektify.js`". All Javascript code must be written to it, regardless of whether it uses ES6 or not. Gem will use it in the folder "`assets/vendor/jektify/js`", and you need to minify it with [Gulp](https://gulpjs.com/) to play it there. To do this, run on the terminal in the root directory of Jektify:
 
 ```shell
-$ gulp
+$ npm run build
 ```
-
-The `cdn` folder should contain the original and mined jektify javascript file. It will have a folder structure with the name of each version of [Jektify](https://github.com/jektify/jektify). The service that makes CDN available is [Jsdelivr](https://www.jsdelivr.com/).
 
 *Sass*
 
@@ -74,31 +71,6 @@ The layout of [Jektify](https://github.com/jektify/jektify) is being attributed 
 *Pack*
 
 Now, you can generate the gem of Jektify with the `bundle exec rake build` command, it will be bundled in the directory "`pkg`". To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
-
-*Webpage*
-
-The development of the [Jektify](https://github.com/jektify/jektify) page is in the folder "`src/dev/page`", it is a Jekyll template. To develop, you need to update the [Jektify](https://github.com/jektify/jektify) version in the `Gemfile` file according to the version of the gem in development of [Jektify](https://github.com/jektify/jektify).
-
-```yaml
-group :jekyll_plugins do
-  gem "jektify", "~> [VERSION_DEVELOPMENT]"
-end
-```
-
-After that execute:
-
-```shell
-$ bundle install
-$ ./serve
-```
-
-If Jektify adds new features and options, you should configure the file "` _config.yml`" in the Jektify block.
-
-*Travis*
-
-The [Jektify](https://github.com/jektify/jektify) uses [Travis](travis-ci.org) to do the gem tests, you should configure the Ruby version in `.travis.yml` (hidden) if necessary.
-
-The "`bin/travis`" file will be the file that [Travis](travis-ci.org) will use to perform the script tests, in this file you must change the Jektify version in the variable "`APP__VERSION`" to the version that the Jekyll test project will use [Jektify](https://github.com/jektify/jektify).
 
 ## Contributing
 
