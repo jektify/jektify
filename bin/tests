@@ -1,85 +1,77 @@
 #!/usr/bin/env bash
 
-GEM__ROOT=$PWD
-JEKYL__PROJECT="project"
-APP__NAME="jektify"
-APP__VERSION="1.0.6"
+ROOT=$PWD
+JEKYLL_PROJECT="project"
+APP__VERSION="1.0.8"
 
-function _clean(){
-  cd $GEM__ROOT
-  rm -rf "tests/vm/$JEKYL__PROJECT"
-}
-
-# Generated Jektify gem
+bin/setup
 bundle exec rake build
-echo "Jektify gem created!"
 
-# Generated Jektify gem
-bundle exec rake install
-echo "${APP__NAME^^} gem installed!"
+# mkdir -p "$ROOT/$JEKYLL_PROJECT/.bundle"
 
-# Clean cache before created
-_clean
+# # Add dependency in Gemfile for Jekyll project
+# cat << EOF > "${ROOT}/${JEKYLL_PROJECT}/Gemfile"
+# source 'https://rubygems.org'
 
-# Created project Jekyll
-mkdir -p tests/vm
-bundle exec jekyll new tests/vm/$JEKYL__PROJECT; cd $_
+# gem 'sass-embedded', '~> 1.69'
+# gem "logger", "~> 1.7.0"
+# gem "csv", "~> 3.3.2"
+# gem "colorize", "~> 1.1.0"
+# gem "rake", "~> 13.3.0"
+# gem "sass", "~> 3.7.4"
+# gem "erb", "~> 5.0.2"
+# gem "bigdecimal", "~> 3.0.2"
+# gem "webrick", "~> 1.7.0"
+# gem "json", "~> 2.5.1"
+# gem 'jekyll', '~> 4.4.1'
 
-# Add dependency in Gemfile for Jekyll project
-cat << EOF >> Gemfile
-gem "bigdecimal", "~> 3.0.2"
-gem "webrick", "~> 1.7.0"
-gem "json", "~> 2.5.1"
-EOF
+# group :jekyll_plugins do
+#   gem 'jektify', '~> 1.0.8'
+# end
+# EOF
 
-# Add Jektify in file Gemfile
-sed -i "/  gem \"jekyll-feed\", \"~> 0.15.1\"/a \  \gem \"$APP__NAME\", \"~> $APP__VERSION\"" Gemfile
+# cat << EOF > "$ROOT/$JEKYLL_PROJECT/.bundle/config"
+# ---
+# BUNDLE_PATH: "vendor/bundle"
+# BUNDLE_DISABLE_SHARED_GEMS: "true"
+# EOF
 
-# Add plugin of Jektify in file _config.yml
-sed -i "/- jekyll-feed/a\ \ - $APP__NAME" _config.yml
+# cd "$ROOT/$JEKYLL_PROJECT"
 
-# Add config Jektify in file _config.yml
-cat << EOF >> _config.yml
+# bundle exec jekyll new .
+# cd project
+# sed -i "/  gem \"jekyll-feed\", \"~> 0.15.1\"/a \  \gem \"jektify\", \"~> $APP__VERSION\"" Gemfile
+# sed -i "/- jekyll-feed/a\ \ - jektify" _config.yml
 
-$APP__NAME:
-  enable: true
-  open: true
-  toggle:
-    enable: true
-  spotify:
-    user: # "you_user_spotify"
-    text: "See me no Spotify"
-  sass:
-    jekyll: true
-    other:
-      dir: "way/to/your/SASS"
-  title:
-    enable: false
-    text: "Music name"
-  description:
-    enable: false
-    text: |
-      Jekyll plugin to generate html snippets for embedding Spotify Musics.
-      To listen to the full song, open your Spotify and start these musics.
-EOF
+# cat << EOF >> _config.yml
 
-# Add liquid in markdown of Jektify
-echo "{% $APP__NAME spotify/track/62qsgMnY4wg8nE5qjyOdWO/dark %}" >> _posts/*-welcome-to-jekyll.markdown
+# jektify:
+#   enable: true
+#   open: true
+#   toggle:
+#     enable: true
+#   spotify:
+#     user: # "you_user_spotify"
+#     text: "See me no Spotify"
+#   sass:
+#     jekyll: true
+#     other:
+#       dir: "way/to/your/SASS"
+#   title:
+#     enable: false
+#     text: "Music name"
+#   description:
+#     enable: false
+#     text: |
+#       Jekyll plugin to generate html snippets for embedding Spotify Musics.
+#       To listen to the full song, open your Spotify and start these musics.
+# EOF
 
-# Bundler configuration folder
-mkdir -p .bundle
-cat << EOF > .bundle/config
----
-BUNDLE_PATH: "vendor/bundle"
-BUNDLE_DISABLE_SHARED_GEMS: "true"
-EOF
+# echo "{% jektify spotify/track/62qsgMnY4wg8nE5qjyOdWO/dark %}" >> _posts/*-welcome-to-jekyll.markdown
 
-# Re-Update Gemfile.lock for project Jekyll
-bundle install
+# # Re-Update Gemfile.lock for project Jekyll
+# bundle install
 
-# Compiled project Jekyll with liquid of gem Jektify
-bundle exec jekyll b
-echo "${APP__NAME^^} $JEKYL__PROJECT compiled!"
-
-# Clean cache
-# _clean
+# # Compiled project Jekyll with liquid of gem Jektify
+# bundle exec jekyll b
+# echo "${APP__NAME^^} $JEKYL__PROJECT compiled!"

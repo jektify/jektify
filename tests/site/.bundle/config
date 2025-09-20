@@ -1,4 +1,0 @@
----
-BUNDLE_PATH: ".bundle-cache/bundle"
-BUNDLE_DISABLE_SHARED_GEMS: "true"
-BUNDLE_BUILD__SASSC: "--disable-march-tune-native"
