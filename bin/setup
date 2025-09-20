@@ -7,6 +7,9 @@ set -vx
 sed -i "s|^  gem \"jektify\", path: .*|  gem \"jektify\", path: \"$PWD\"|g" example/Gemfile
 
 bundle install
+rake build
 
 # Do any other automated setup that you need to do here
 
+cd example
+bundle exec jekyll b
